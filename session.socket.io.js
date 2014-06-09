@@ -38,7 +38,7 @@ module.exports = function(io, sessionStore, cookieParser, key) {
     var handshake = JSON.parse(JSON.stringify(handshakeInput)); // copy of object
     if(handshake.secureCookies && handshake.secureCookies[key]) handshake.secureCookies = (handshake.secureCookies[key].match(/\:(.*)\./) || []).pop();
     if(handshake.signedCookies && handshake.signedCookies[key]) handshake.signedCookies[key] = (handshake.signedCookies[key].match(/\:(.*)\./) || []).pop();
-    if(handshake.cookies && handshake.cookies[key]) handshake.cookies[key] = (handshake.cookies[key].match(/\:(.*)\./) ||).pop();
+    if(handshake.cookies && handshake.cookies[key]) handshake.cookies[key] = (handshake.cookies[key].match(/\:(.*)\./) || []).pop();
 
     // original code
     return (handshake.secureCookies && handshake.secureCookies[key])
