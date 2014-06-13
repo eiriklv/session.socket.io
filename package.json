@@ -1,6 +1,6 @@
 {
   "name": "session.socket.io-express4",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Express middleware sessions in socket.io",
   "author": {
     "name": "Wagner Camarao",
