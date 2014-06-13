@@ -1,6 +1,8 @@
 session.socket.io (SessionSockets)
 ==================================
 
+On NPM: [session.socket.io-express4](https://www.npmjs.org/package/session.socket.io-express4)
+
 **ADDED FIX FOR EXPRESS 4.X (eiriklv)**
 
 This tiny node module aims to simplify your socket.io application when using http sessions from express or connect middlewares. It has no dependencies and can be initialized using any session store and cookie parser compatible with express or connect.
