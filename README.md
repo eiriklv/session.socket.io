@@ -5,7 +5,7 @@ session.socket.io (SessionSockets)
 
 This tiny node module aims to simplify your socket.io application when using http sessions from express or connect middlewares. It has no dependencies and can be initialized using any session store and cookie parser compatible with express or connect.
 
-It's written and tested using express 3.0.0rc4, connect 2.4.5 and socket.io 0.9.10.
+It's written and tested using express 4.4.1 and socket.io 0.9.17.
 
 ## Quick Start
 
@@ -13,7 +13,7 @@ Import the module and initialize it providing the required parameters
 
 ```js
 var SessionSockets = require('session.socket.io')
-  , sessionSockets = new SessionSockets(io, sessionStore, cookieParser);
+  , sessionSockets = new SessionSockets(io, sessionStore, cookieParser());
 ```
 
 Listen to socket connections and get the socket _as provided by socket.io_, together with either the session or an error
